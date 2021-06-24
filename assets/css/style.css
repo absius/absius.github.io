@@ -48,6 +48,10 @@ header a {
   color: floralwhite;
 }
 
+header a:hover {
+  background-color: lightseagreen;
+}
+
 header nav {
   margin: 7px 0;
 }
@@ -142,6 +146,11 @@ footer img {
 .projects a {
   color: lightseagreen;
   text-decoration: none;
+}
+
+.projects a:hover {
+  background-color: lightseagreen;
+  opacity: 0.5;
 }
 .about-me {
   font-size: larger;
