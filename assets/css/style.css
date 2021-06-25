@@ -18,6 +18,13 @@ h2::before {
   visibility: hidden;
 }
 
+h3 {
+  flex: 0 100%;
+  color: floralwhite;
+  padding-left: 30%;
+  background-color: lightseagreen;
+}
+
 header {
   padding: 20px 35px;
   background-color: darkslateblue;
@@ -101,8 +108,9 @@ footer img {
   text-align: center;
 }
 
-.contact-info h2 {
+h2 {
   text-align: left;
+  color: floralwhite;
 }
 .contact-info img {
   height: 200px;
@@ -122,18 +130,24 @@ footer img {
   text-decoration: none;
 }
 
-.projects h3 {
-  text-align: center;
-  margin-bottom: 40px;
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  position: relative;
 }
+
 .projects img {
   height: 200px;
   width: 700px;
 }
 
-.larger img:first-child {
+.larger {
   height: 400px;
   width: 100%;
+  margin-bottom: 20px;
 }
 .projects ul {
   display: flex;
@@ -146,6 +160,7 @@ footer img {
 .projects a {
   color: lightseagreen;
   text-decoration: none;
+  margin-bottom: 20px;
 }
 
 .projects a:hover {
@@ -155,4 +170,64 @@ footer img {
 .about-me {
   font-size: larger;
   margin-bottom: 20px;
+}
+
+.birthday {
+  background-image: url("../images/tristan-smile.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  height: 200px;
+  width: 700px;
+}
+
+.run {
+  background-image: url("../images/run.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  height: 400px;
+  width: 100%;
+}
+
+.music {
+  background-image: url("../images/nobuo.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  height: 200px;
+  width: 700px;
+}
+
+.hello {
+  background-image: url("../images/world.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  height: 200px;
+  width: 700px;
+}
+
+.thank {
+  background-image: url("../images/ThankYou.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  height: 200px;
+  width: 700px;
 }
