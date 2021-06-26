@@ -21,8 +21,8 @@ THEN I am taken to that deployed application
 WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport
 
-Link to Repository https://github.com/absius/urban-octo-telegram/tree/main/Develop
+Link to Repository https://github.com/absius/absius.github.io
 
 Link to deployed page https://absius.github.io/
 
-Screen Capture https://github.com/absius/urban-octo-telegram/blob/main/Develop/assets/images/ScreenCapture.PNG
+Screen Capture https://github.com/absius/absius.github.io/blob/main/assets/images/screenshot.png
