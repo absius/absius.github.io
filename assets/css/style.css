@@ -1,3 +1,4 @@
+/* Global settings for the page */
 * {
   margin: 0;
   padding: 0;
@@ -23,6 +24,33 @@ h3 {
   background-color: blue;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
+
+section::before {
+  display: block;
+  content: " ";
+  margin-top: -80px;
+  height: 80px;
+  visibility: hidden;
+}
+
+h2 {
+  text-align: left;
+  color: darkslateblue;
+}
+
+.column-left {
+  flex: 1;
+  border-right: 2px solid darkslateblue;
+  padding-right: 100px;
+  margin-right: 25px;
+  width: 100px;
+}
+
+.column-right {
+  width: 90%;
+}
+
+/* Header Section */
 
 header {
   padding: 20px 35px;
@@ -77,6 +105,8 @@ header nav ul li a {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+/* Hero Section */
+
 .hero {
   background-image: url("../images/ff7r-redxiii-v2-1920x1080-1.jpg");
   background-size: cover;
@@ -106,69 +136,17 @@ header nav ul li a {
   color: floralwhite;
 }
 
-footer {
-  text-align: center;
-  background-color: black;
-  color: var(--light-text-color);
-  width: 100%;
-  padding: 40px 35px;
-  display: block;
-}
+/* About Me Section */
 
-footer img {
-  height: 50px;
-  width: auto;
-}
-.contact-info {
-  text-align: center;
-}
-
-section::before {
-  display: block;
-  content: " ";
-  margin-top: -80px;
-  height: 80px;
-  visibility: hidden;
-}
-
-h2 {
-  text-align: left;
-  color: darkslateblue;
-}
-.contact-info img {
-  height: 200px;
-  width: 200px;
-}
-
-.contact-info ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  list-style: none;
-}
-
-.contact-info::before {
-  display: block;
-  content: " ";
-  margin-top: 0px;
-  height: 0px;
-  visibility: hidden;
-}
-.contact-info {
+.about-me {
+  font-size: larger;
+  margin-bottom: 20px;
   background-color: floralwhite;
   color: darkslateblue;
+  display: flex;
 }
 
-.contact-info h2 {
-  color: darkslateblue;
-}
-
-.contact-info a {
-  text-decoration: none;
-  color: darkslateblue;
-  font-weight: bold;
-}
+/* Projects section */
 
 .projects ul {
   display: flex;
@@ -189,14 +167,11 @@ h2 {
   width: 100%;
   margin-bottom: 20px;
 }
-.projects ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  list-style: none;
-}
 
+.projects {
+  display: flex;
+  margin-bottom: 20px;
+}
 .projects a {
   color: var(--main-text-color);
   text-decoration: none;
@@ -211,16 +186,8 @@ h2 {
   background-color: var(--main-text-color);
   opacity: 0.4;
 }
-.about-me {
-  font-size: larger;
-  margin-bottom: 20px;
-  background-color: floralwhite;
-  color: darkslateblue;
-}
 
-.about-me h2 {
-  color: darkslateblue;
-}
+/* Project Links Styling */
 
 .birthday {
   background-image: url("../images/tristan-smile.jpg");
@@ -231,7 +198,7 @@ h2 {
   flex-wrap: wrap;
   align-items: flex-start;
   height: 200px;
-  width: 700px;
+  width: 600px;
   position: relative;
 }
 
@@ -269,7 +236,7 @@ h2 {
   flex-wrap: wrap;
   align-items: flex-start;
   height: 200px;
-  width: 700px;
+  width: 600px;
   position: relative;
 }
 
@@ -288,7 +255,7 @@ h2 {
   flex-wrap: wrap;
   align-items: flex-start;
   height: 200px;
-  width: 700px;
+  width: 600px;
   position: relative;
 }
 
@@ -307,7 +274,7 @@ h2 {
   flex-wrap: wrap;
   align-items: flex-start;
   height: 200px;
-  width: 700px;
+  width: 600px;
   position: relative;
 }
 
@@ -315,4 +282,52 @@ h2 {
   position: absolute;
   bottom: 20%;
   height: 50px;
+}
+
+/* Contact Info Section */
+
+.contact-info img {
+  height: 200px;
+  width: 200px;
+}
+
+.contact-info ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.contact-info {
+  font-size: larger;
+  margin-bottom: 20px;
+  background-color: floralwhite;
+  color: darkslateblue;
+  display: flex;
+}
+
+.contact-info a {
+  text-decoration: none;
+  color: darkslateblue;
+  font-weight: bold;
+}
+
+/* Footer Section */
+
+footer {
+  text-align: center;
+  background-color: black;
+  color: var(--light-text-color);
+  width: 100%;
+  padding: 40px 35px;
+  display: block;
+}
+
+footer img {
+  height: 50px;
+  width: auto;
+}
+
+@media screen and (max-width: 900px) {
 }
