@@ -4,25 +4,24 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: Helvetica, Arial, sans-serif;
-  color: lightseagreen;
-  background-color: darkslategray;
+:root {
+  --main-text-color: lightseagreen;
+  --light-text-color: floralwhite;
+  --background-color: darkslategray;
 }
 
-h2::before {
-  display: block;
-  content: " ";
-  margin-top: -80px;
-  height: 80px;
-  visibility: hidden;
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  color: var(--main-text-color);
+  background-color: var(--light-text-color);
 }
 
 h3 {
   flex: 0 100%;
-  color: floralwhite;
+  color: var(--light-text-color);
   padding-left: 30%;
-  background-color: lightseagreen;
+  background-color: blue;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 header {
@@ -45,18 +44,18 @@ header {
 header h1 {
   font-weight: bold;
   font-size: 36px;
-  color: floralwhite;
+  color: var(--light-text-color);
   margin: 0;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 header a {
   text-decoration: none;
-  color: floralwhite;
+  color: var(--light-text-color);
 }
 
 header a:hover {
-  background-color: lightseagreen;
+  background-color: var(--main-text-color);
 }
 
 header nav {
@@ -81,7 +80,7 @@ header nav ul li a {
 .hero {
   background-image: url("../images/ff7r-redxiii-v2-1920x1080-1.jpg");
   background-size: cover;
-  color: floralwhite;
+  color: var(--light-text-color);
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -89,12 +88,28 @@ header nav ul li a {
   background-attachment: fixed;
   background-position: 80%;
   height: 450px;
+  position: relative;
+}
+
+.circle {
+  background-color: blue;
+  position: absolute;
+  right: 0;
+  bottom: 25%;
+  height: 70px;
+  border-radius: 50%;
+  opacity: 0.9;
+}
+
+.hero h2 {
+  margin-top: 25px;
+  color: floralwhite;
 }
 
 footer {
   text-align: center;
   background-color: black;
-  color: floralwhite;
+  color: var(--light-text-color);
   width: 100%;
   padding: 40px 35px;
   display: block;
@@ -108,9 +123,17 @@ footer img {
   text-align: center;
 }
 
+section::before {
+  display: block;
+  content: " ";
+  margin-top: -80px;
+  height: 80px;
+  visibility: hidden;
+}
+
 h2 {
   text-align: left;
-  color: floralwhite;
+  color: darkslateblue;
 }
 .contact-info img {
   height: 200px;
@@ -125,12 +148,29 @@ h2 {
   list-style: none;
 }
 
-.contact-info a {
-  color: lightseagreen;
-  text-decoration: none;
+.contact-info::before {
+  display: block;
+  content: " ";
+  margin-top: 0px;
+  height: 0px;
+  visibility: hidden;
+}
+.contact-info {
+  background-color: floralwhite;
+  color: darkslateblue;
 }
 
-.projects {
+.contact-info h2 {
+  color: darkslateblue;
+}
+
+.contact-info a {
+  text-decoration: none;
+  color: darkslateblue;
+  font-weight: bold;
+}
+
+.projects ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -158,18 +198,28 @@ h2 {
 }
 
 .projects a {
-  color: lightseagreen;
+  color: var(--main-text-color);
   text-decoration: none;
   margin-bottom: 20px;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -webkit-transition: opacity 0.5s ease-in-out;
 }
 
 .projects a:hover {
-  background-color: lightseagreen;
-  opacity: 0.5;
+  background-color: var(--main-text-color);
+  opacity: 0.4;
 }
 .about-me {
   font-size: larger;
   margin-bottom: 20px;
+  background-color: floralwhite;
+  color: darkslateblue;
+}
+
+.about-me h2 {
+  color: darkslateblue;
 }
 
 .birthday {
@@ -182,6 +232,13 @@ h2 {
   align-items: flex-start;
   height: 200px;
   width: 700px;
+  position: relative;
+}
+
+.btext {
+  position: absolute;
+  bottom: 20%;
+  height: 50px;
 }
 
 .run {
@@ -194,6 +251,13 @@ h2 {
   align-items: flex-start;
   height: 400px;
   width: 100%;
+  position: relative;
+}
+
+.runtext {
+  position: absolute;
+  bottom: 20%;
+  height: 50px;
 }
 
 .music {
@@ -206,6 +270,13 @@ h2 {
   align-items: flex-start;
   height: 200px;
   width: 700px;
+  position: relative;
+}
+
+.musictext {
+  position: absolute;
+  bottom: 20%;
+  height: 50px;
 }
 
 .hello {
@@ -218,6 +289,13 @@ h2 {
   align-items: flex-start;
   height: 200px;
   width: 700px;
+  position: relative;
+}
+
+.hellotext {
+  position: absolute;
+  bottom: 20%;
+  height: 50px;
 }
 
 .thank {
@@ -230,4 +308,11 @@ h2 {
   align-items: flex-start;
   height: 200px;
   width: 700px;
+  position: relative;
+}
+
+.thanktext {
+  position: absolute;
+  bottom: 20%;
+  height: 50px;
 }
