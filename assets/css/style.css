@@ -215,8 +215,8 @@ header nav ul li a {
   height: 50px;
 }
 
-.run {
-  background-image: url("../images/run.jpg");
+.search {
+  background-image: url("../images/gameSearch.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
@@ -228,7 +228,7 @@ header nav ul li a {
   position: relative;
 }
 
-.runtext {
+.searchtext {
   position: absolute;
   bottom: 20%;
   height: 50px;
@@ -286,6 +286,25 @@ header nav ul li a {
 }
 
 .thanktext {
+  position: absolute;
+  bottom: 20%;
+  height: 50px;
+}
+
+.run {
+  background-image: url("../images/run.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  height: 200px;
+  width: 600px;
+  position: relative;
+}
+
+.runtext {
   position: absolute;
   bottom: 20%;
   height: 50px;
