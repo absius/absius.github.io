@@ -215,8 +215,8 @@ header nav ul li a {
   height: 50px;
 }
 
-.search {
-  background-image: url("../images/gameSearch.png");
+.guard {
+  background-image: url("../images/virtual-guardian.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
@@ -229,44 +229,6 @@ header nav ul li a {
 }
 
 .searchtext {
-  position: absolute;
-  bottom: 20%;
-  height: 50px;
-}
-
-.music {
-  background-image: url("../images/nobuo.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: center;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  height: 200px;
-  width: 600px;
-  position: relative;
-}
-
-.musictext {
-  position: absolute;
-  bottom: 20%;
-  height: 50px;
-}
-
-.hello {
-  background-image: url("../images/world.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: center;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  height: 200px;
-  width: 600px;
-  position: relative;
-}
-
-.hellotext {
   position: absolute;
   bottom: 20%;
   height: 50px;
@@ -286,6 +248,26 @@ header nav ul li a {
 }
 
 .thanktext {
+  position: absolute;
+  bottom: 20%;
+  height: 50px;
+}
+
+
+.search {
+  background-image: url("../images/gameSearch.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  height: 200px;
+  width: 600px;
+  position: relative;
+}
+
+.searchtext {
   position: absolute;
   bottom: 20%;
   height: 50px;
