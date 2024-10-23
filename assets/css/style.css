@@ -6,7 +6,8 @@
 }
 
 html {
-  scroll-padding-top: 80px; /* height of sticky header */
+  scroll-padding-top: 80px;
+  /* height of sticky header */
 }
 
 :root {
@@ -68,7 +69,7 @@ header {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  background-image: url("../images/pat-professional2.jpg");
+  background-image: url("../images/pat-professional3.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -115,16 +116,16 @@ header nav ul li a {
 /* Hero Section */
 
 .hero {
-  background-image: url("../images/pat-professional2.jpg");
+  background-image: url("../images/pat-professional3.jpg");
   background-size: cover;
   color: var(--light-text-color);
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  align-items: flex-start;
+  align-items: center;
   background-attachment: fixed;
   background-position: center;
-  height: 450px;
+  height: 600px;
   position: relative;
 }
 
@@ -179,6 +180,7 @@ header nav ul li a {
   display: flex;
   margin-bottom: 20px;
 }
+
 .projects a {
   color: var(--main-text-color);
   text-decoration: none;
@@ -365,6 +367,7 @@ footer img {
     font-size: 20px;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
+
   .projects a {
     flex: 1 100%;
     text-align: center;
@@ -377,12 +380,15 @@ footer img {
   .run {
     width: 400px;
   }
+
   .music {
     width: 400px;
   }
+
   .hello {
     width: 400px;
   }
+
   .birthday {
     width: 400px;
   }
@@ -390,6 +396,7 @@ footer img {
   .column-left {
     display: none;
   }
+
   .mobile-heading {
     display: block;
     border-bottom: 2px solid darkslateblue;
